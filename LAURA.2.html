@@ -1,0 +1,166 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Laura's Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding: 80px;
+            text-align: center;
+            background: lightskyblue;
+            color: white;
+        }
+
+        /* Increase the font size of the heading */
+        .header h1 {
+            font-size: 40px;
+        }
+
+        /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+        .navbar {
+            overflow: hidden;
+            background-color: lightslategray;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+
+        /* Right-aligned link */
+        .navbar a.right {
+            float: right;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: lightsteelblue;
+            color: black;
+        }
+
+        /* Active/current link */
+        .navbar a.active {
+            background-color: lightslategrey;
+            color: white;
+        }
+
+        /* Column container */
+        .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            -ms-flex: 30%; /* IE10 */
+            flex: 30%;
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        /* Main column */
+        .main {
+            -ms-flex: 70%; /* IE10 */
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+
+        .fakeimg {
+            background-color: lightgoldenrodyellow;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: lightskyblue;
+        }
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Laura Arsenault's Website</h1>
+    <p> <b></b> Welcome to my website!!!.</p>
+</div>
+
+<div class="navbar">
+    <a href="#" class="active">Home</a>
+    <a href="https://www.youtube.com/watch?v=DOl7rtNM_4E&t=4s">My friends</a>
+    <a href="https://www.youtube.com/watch?v=r-8QLPvwyPc">Dance Competition</a>
+    <a href="https://www.youtube.com/watch?v=GfGN7bfohms" class="right">Surprise Link</a>
+</div>
+
+<div class="row">
+    <div class="side">
+        <h2>About Me</h2>
+        <h5>Photo of me:</h5>
+        <img src="me.jpg" width="250" height="200" alt="Laura Arsenault">
+        <p>Hi my name is Laura Arsenault. I am currently a freshman at the University of Maine. I am a marketing major. I have been dancing since I was 2 years old and plan on continuing to dance in college. I started dancing competitively when I was 11 and competed in dance up until my senior year of high school. Along with dance I also love music. Back at my home I have a vinyl collection of over 300 records.  </p>
+
+        <img src="dance.jpg" width="250" height="200" alt="Laura Arsenault">
+        <img src="main.jpg" width="250" height="300" alt="Laura Arsenault">
+        <img src="vinyl.jpg" width="250" height="300" alt="Laura Arsenault">
+        <img src="art.jpg" width="250" height="300" alt="Laura Arsenault">
+    </div>
+    <div class="main">
+        <h2>CAMP</h2>
+        <h5>View of lake from the cabin I go to every year</h5>
+        <img src="camp.jpg" width="600" height="500" alt="Laura Arsenault">
+        <p>Every summer since I was born I go to a camp up in the Camden-Rockland area. My family goes with our family friends who own the lake house and we usually stay there for about a week. Throughout the year we end up visiting there every once and awhile. .</p>
+
+        <br>
+        <h2>Me and My Sister</h2>
+        <h5>My Graduation</h5>
+        <img src="sister.jpg" width="478" height="733" alt="Laura Arsenault">
+</div>
+
+<div class="There it is folks">
+    <h2>there it is folks, enjoy</h2>
+</div>
+
+</body>
+</html>
